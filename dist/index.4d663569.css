@@ -1,0 +1,61 @@
+@import "https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+.country-flag {
+  height: 30px;
+  vertical-align: middle;
+  display: inline;
+}
+
+.country-info h2 {
+  vertical-align: middle;
+  margin-left: 10px;
+  font-family: Ubuntu, sans-serif;
+  font-size: 32px;
+  font-weight: lighter;
+  display: inline;
+}
+
+.region-africa {
+  color: #00f;
+}
+
+.region-americas {
+  color: green;
+}
+
+.region-asia {
+  color: red;
+}
+
+.region-europe {
+  color: gold;
+}
+
+.region-oceania {
+  color: purple;
+}
+
+.region-antarctic {
+  color: #d3d3d3;
+}
+
+/*# sourceMappingURL=index.4d663569.css.map */
