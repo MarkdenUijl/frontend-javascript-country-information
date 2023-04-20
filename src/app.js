@@ -22,14 +22,6 @@ async function getCountries() {
                 </li>
             `
         });
-
-        // countryList.innerHTML += `
-        //     <li class="country-info">
-        //         <img class="country-flag" src=${countries[0].flags.png} alt="flag of ${countries[0].name.common}">
-        //         <h2 class="${getRegionClassString(countries[0])}">${countries[0].name.common}</h2>
-        //         <p>has a population of ${countries[0].population} people.</p>
-        //     </li>
-        // `
     } catch (e) {
         console.error(e)
     }
