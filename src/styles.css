@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Ubuntu:wght@300;400;500;700&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
 /* CSS RESET: */
 * {
@@ -8,29 +9,51 @@
 }
 
 /* BASE STYLING */
-body {
-    min-height: 100vh;
+.outer-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 40px;
-    gap: 20px;
+    gap: 40px;
 }
 
-li {
-    list-style: none;
+/* Map */
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    font-size: 50px;
+    padding: 10px;
+}
+
+img {
+    max-width: 100%;
 }
 
 /* Country info */
+ul {
+    columns: 3;
+}
+
+li {
+    padding: 12px;
+    page-break-inside: avoid;
+    list-style: none;
+}
+
+.list-container {
+    padding: 40px;
+    background-color: whitesmoke;
+    border: lightgrey solid 2px;
+    border-radius: 20px;
+}
+
 .country-flag {
-    height: 30px;
+    height: 20px;
     display: inline;
     vertical-align: middle;
 }
 
 .country-info h2 {
-    font-size: 32px;
+    font-size: 22px;
     display: inline;
     margin-left: 10px;
     font-family: Ubuntu, sans-serif;
@@ -39,13 +62,7 @@ li {
 
 }
 
-/* Region classes
-Africa: blauw
-Americas: groen
-Asia: rood
-Europe: geel
-Oceania: paars
-*/
+/* Region classes */
 .region-africa {
     color: blue;
 }
@@ -67,5 +84,5 @@ Oceania: paars
 }
 
 .region-antarctic {
-    color: lightgrey;
+    color: grey;
 }

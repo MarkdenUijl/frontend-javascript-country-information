@@ -12,12 +12,13 @@ async function getCountries() {
         })
 
         countries.map((country) => {
-            console.log(`land: ${country.name.common} regio: ${country.region}`)
+            const {population, region, name: {common}, flags: {png}} = country;
+
             countryList.innerHTML += `
                 <li class="country-info">
-                    <img class="country-flag" src=${country.flags.png} alt="Flag of ${country.name.common}">
-                    <h2 class=${getRegionClassString(country)}>${country.name.common}</h2>
-                    <p>Has a population of ${country.population} people.</p>
+                    <img class="country-flag" src=${png} alt="Flag of ${common}">
+                    <h2 class=${getRegionClassString(country)}>${common}</h2>
+                    <p>Has a population of ${population} people.</p>
                 </li>
             `
         });
