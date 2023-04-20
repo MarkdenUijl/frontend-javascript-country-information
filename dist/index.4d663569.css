@@ -1,0 +1,82 @@
+@import "https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Ubuntu:wght@300;400;500;700&display=swap";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.outer-container {
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px;
+  display: flex;
+}
+
+h1 {
+  text-align: center;
+  padding: 10px;
+  font-family: Permanent Marker, cursive;
+  font-size: 50px;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  columns: 3;
+}
+
+li {
+  page-break-inside: avoid;
+  padding: 12px;
+  list-style: none;
+}
+
+.list-container {
+  background-color: #f5f5f5;
+  border: 2px solid #d3d3d3;
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.country-flag {
+  height: 20px;
+  vertical-align: middle;
+  display: inline;
+}
+
+.country-info h2 {
+  vertical-align: middle;
+  margin-left: 10px;
+  font-family: Ubuntu, sans-serif;
+  font-size: 22px;
+  font-weight: lighter;
+  display: inline;
+}
+
+.region-africa {
+  color: #00f;
+}
+
+.region-americas {
+  color: green;
+}
+
+.region-asia {
+  color: red;
+}
+
+.region-europe {
+  color: gold;
+}
+
+.region-oceania {
+  color: purple;
+}
+
+.region-antarctic {
+  color: gray;
+}
+
+/*# sourceMappingURL=index.4d663569.css.map */
